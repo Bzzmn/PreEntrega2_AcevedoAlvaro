@@ -1,0 +1,384 @@
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+:root{
+    --titles-font: 'Arvo', serif;
+    --paragraph-font: 'Lato', sans-serif;
+    --col-main: #FF8811;
+    --col-sec: #E03616;
+    --col-ter: #226F54;
+    --colval-white: #FAFAFF;
+    --colval-black: #242325;
+    font-family: var(--paragraph-font);
+    font-size: 62.5%; /*base: 10px*/
+}
+
+body {
+    background-color: var(--colval-white);  
+}
+
+h1{
+    font-family: var(--titles-font);
+    font-size: 4.8rem;
+}
+
+h2{
+    font-family: var(--titles-font);
+    font-size: 4.0rem;    
+}
+
+h3{
+    font-family: var(--titles-font);
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.4rem;
+}
+
+p{
+    font-family: var(--paragraph-font);
+    font-size: 1.6rem;
+}
+
+a{
+    font-family: var(--paragraph-font);
+    background-color: none;
+    text-decoration: none;
+    color: var(--colval-black)
+}
+
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+
+#main-header{
+    background-color: var(--col-main);
+    font-family: var(--paragraph-font);
+    position: fixed;
+    width: 100%;
+    height: 7rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#header-wraper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1300px;
+    padding: 0 4.5rem;
+    & i {
+        color: var(--colval-white);
+        transform: scale(2.2);
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+#logo{
+    text-align: center;
+    border: var(--colval-black) 2px solid;
+    padding: 10px;
+}
+
+.nav-menu{
+    font-size: 1.6rem;
+    gap: 2.5rem;
+    & a {
+        color: var(--colval-white);
+    }
+}
+
+#index-hero{
+    position: relative;
+    width: auto;
+    height: 100vh;
+    height: 100svh;
+}
+
+#hero-background{
+    position: relative;
+    width: auto;
+    height: 100vh;
+    height: 100svh;
+    background-image: url(../img/pizza-oven.png);
+    background-size:cover;
+    z-index: -2;
+}
+
+#hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+#hero-cta{
+    color: var(--colval-white);
+    margin-top: -28%;
+    z-index: 2;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-left: 20%;
+    & span {
+        font-size: 2.4rem;
+        font-weight: normal;
+        font-family: var(--paragraph-font);
+    }  
+    & .btn{
+        position: relative;
+    }
+}
+
+.btn{
+    position: absolute;
+    align-self: flex-start;
+    background-color: var(--col-main);
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+    border-radius: 3rem;
+    color: var(--colval-white);
+    font-size: 1.6rem; 
+    z-index: 90;
+}
+
+.btn:hover{
+    background-color: var(--col-ter);
+}  
+
+#promo-strip{
+    background-color: var(--col-ter);
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    color: var(--colval-white);
+    text-align: center;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & p{
+        font-size: 1.4rem;
+    }
+}
+
+#productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h3 {
+        margin-top: 5rem;
+        font-family: var(--titles-font);
+    }
+}
+
+.products-cards{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 2rem;
+    & .prod-card {
+        border: rgba(0, 0, 0, 0.3) 1px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-end;
+        max-width: 20rem;
+        & img {
+            width: 80%;
+            height: auto;
+            align-self: center;
+            justify-self:flex-start;
+        }
+        & .prod-name{
+            font-weight: bold;
+            margin: 2rem 1.5rem 0 1.5rem;
+        }
+        & .prod-desc{
+            margin: 0 1.5rem 0 1.5rem;
+            font-size: 1.4rem;
+        }
+        & .prod-price{
+            margin: 1rem 1.5rem 1rem 1.5rem;
+        }
+        & .add-to-cart{
+            background-color: var(--col-main);
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        & .add-to-cart .add-to-cart-text{
+            color: var(--colval-white);
+        }
+        & .add-to-cart:hover{
+            background-color: var(--col-ter);
+            cursor: pointer;
+        }
+    }
+}
+
+
+#academy {
+    background-color: rgba(0, 0, 0, 0.02);
+    display: flex;
+    justify-content: center;
+    & #imagen-academy{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        & img{
+            width: 100%;
+            max-width: 70rem;
+        }
+    }
+    & #text-academy{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        & #cta-academy{
+            max-width: 45rem;
+            & h3 span {
+                font-size: 1.6rem;
+                font-weight: normal;
+                font-family: var(--paragraph-font);
+            }
+            & p {
+                margin-top: 1rem;
+            }
+        }
+    }   
+}
+
+#showroom{
+    background-image: url(../img/tienda-cocina\ \(1366\ x\ 1100\ px\).png);
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    & #overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+    }
+}
+
+#cta-showroom{
+    position: absolute;
+    height: 50rem;
+    display: flex;
+    max-width: 45rem;
+    margin-left: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--colval-white) ;
+    z-index: 1;
+    & .btn{
+        position: relative;
+    }
+    & span{
+        font-family: var(--paragraph-font);
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+        & p{
+            margin-top: 1rem;
+    }
+}
+
+footer {
+    background-color: var(--col-main);
+    color: var(--colval-white);
+}
+
+#footer-up{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+#footer-up-left{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 20rem;
+
+        & ul{
+            list-style-type: none;
+        }
+
+        & a{
+            color: var(--colval-white);
+        }
+}
+
+
+#footer-up-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+}
+
+#social-icons ul{
+            display: flex;
+            list-style-type: none;
+            gap: 1rem;
+             & i{
+                color: var(--colval-white);
+                font-size: large;
+            }
+}
+
+
+#payment-media ul {
+            margin-top: 2rem;
+            display: flex;
+            list-style-type: none;
+            gap: 1rem;
+            & i {
+                font-size: large;
+                color: var(--colval-white);
+            }
+}
+
+#footer-down{
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;    
+    margin-top: 1rem;
+    & p{
+        font-size: 1.2rem;    
+    }
+}
+
+
+#content{
+    width: 100%;
+    height: 1000px;
+
+}
+

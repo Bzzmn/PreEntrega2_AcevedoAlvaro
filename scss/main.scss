@@ -1,0 +1,77 @@
+$titles-font: 'Arvo', serif;
+$paragraph-font: 'Lato', sans-serif;
+$col-main: #FF8811;
+$col-sec: #E03616;
+$col-ter: #226F54;
+$colval-white: #FAFAFF;
+$colval-black: #242325;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $paragraph-font;
+    font-size: 62.5%; /*base: 10px*/
+    background-color: $colval-white;
+}
+
+h1{
+    font-family: var(--titles-font);
+    font-size: 4.8rem;
+}
+
+h2{
+    font-family: var(--titles-font);
+    font-size: 4.0rem;    
+}
+
+h3{
+    font-family: var(--titles-font);
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.4rem;
+}
+
+p{
+    font-family: var(--paragraph-font);
+    font-size: 1.6rem;
+}
+
+a{
+    font-family: var(--paragraph-font);
+    background-color: none;
+    text-decoration: none;
+    color: $colval-white;
+}
+
+
+.btn.academy__btn,
+.btn.hero__btn, 
+.btn.showroom__btn {
+    z-index: 100;
+    position: relative;
+    background-color: $col-main;
+    text-decoration: none;
+    color: $colval-white;
+    padding: .8rem 2rem;
+    border-radius: 30px;
+    margin-top: .5rem;
+    &:hover{
+        background-color: $col-ter;
+        color: $colval-white;
+    }
+}
+
+
+@import 'header';
+@import 'hero';
+@import 'productos-featured';
+@import 'academy';
+@import 'showroom';
+@import 'footer';
+@import '@media';

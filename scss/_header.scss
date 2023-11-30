@@ -1,0 +1,21 @@
+.header-container{
+    background-color: $col-main;
+    position: absolute;
+    
+}
+
+.nav-link{
+    color: $colval-white!important;
+}
+
+.navbar__btn{
+    border-color: $colval-white!important;
+    color: $colval-white!important;
+    &:hover{
+        background-color: $col-ter!important;
+    }
+}
+
+.navbar-toggler{
+    border: none!important;
+}

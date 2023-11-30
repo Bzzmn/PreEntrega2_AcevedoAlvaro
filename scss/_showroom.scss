@@ -1,0 +1,26 @@
+.showroom{
+    background-image: url(../img/tienda-cocina\ \(1366\ x\ 1100\ px\).png);
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    position: relative;
+    & .showroom__overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+    }
+    & .showroom__cta{
+        position: absolute;
+        height: 100%;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: $colval-white ;
+        z-index: 5;
+    }
+}
+

@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%; /*base: 10px*/
+  background-color: #FAFAFF;
+}
+
+h1 {
+  font-family: var(--titles-font);
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-family: var(--titles-font);
+  font-size: 4rem;
+}
+
+h3 {
+  font-family: var(--titles-font);
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  font-size: 1.6rem;
+}
+
+a {
+  font-family: var(--paragraph-font);
+  background-color: none;
+  text-decoration: none;
+  color: #FAFAFF;
+}
+
+.btn.academy__btn,
+.btn.hero__btn,
+.btn.showroom__btn {
+  z-index: 100;
+  position: relative;
+  background-color: #FF8811;
+  text-decoration: none;
+  color: #FAFAFF;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  margin-top: 0.5rem;
+}
+.btn.academy__btn:hover,
+.btn.hero__btn:hover,
+.btn.showroom__btn:hover {
+  background-color: #226F54;
+  color: #FAFAFF;
+}
+
+.header-container {
+  background-color: #FF8811;
+  position: absolute;
+}
+
+.nav-link {
+  color: #FAFAFF !important;
+}
+
+.navbar__btn {
+  border-color: #FAFAFF !important;
+  color: #FAFAFF !important;
+}
+.navbar__btn:hover {
+  background-color: #226F54 !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.hero {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  background-image: url(../img/pizza-oven.png);
+  background-size: cover;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.hero__cta {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--colval-white);
+  padding: 5rem;
+}
+
+.promo-strip {
+  justify-self: flex-end;
+  justify-items: end;
+  align-items: flex-end;
+  align-self: flex-end;
+  background-color: #226F54;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 2.5rem;
+  margin-top: -2.5rem;
+}
+
+.promo-strip__text {
+  font-size: 1.2rem;
+  color: #FAFAFF;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 0;
+}
+
+.productos__title {
+  padding: 1.5rem;
+}
+.productos__title h3 {
+  font-weight: 600;
+  text-align: center;
+}
+.productos__title p {
+  text-align: center;
+}
+
+.productos__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.producto__card {
+  border: rgba(0, 0, 0, 0.3) 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 16rem;
+}
+.producto__card img {
+  width: 80%;
+  height: auto;
+  align-self: center;
+  justify-self: flex-start;
+}
+.producto__card .producto__name {
+  font-weight: bold;
+  padding: 2rem 1.5rem 0 1.5rem;
+  font-size: 1.4rem;
+}
+.producto__card .producto__desc {
+  margin: 0 1rem 0 1.5rem;
+  font-size: 1rem;
+}
+.producto__card .producto__price {
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+.producto__card .add-to-cart {
+  background-color: #FF8811;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0.6rem;
+}
+.producto__card .add-to-cart .add-to-cart__text {
+  color: #FAFAFF;
+  font-size: 1.2rem;
+}
+.producto__card .add-to-cart:hover {
+  background-color: var(--col-ter);
+  cursor: pointer;
+}
+
+.academy {
+  background-color: rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: center;
+  padding: 7rem 0 0 0;
+}
+.academy .academy__img-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.academy .academy__img-container img {
+  width: 100%;
+  max-width: 70rem;
+}
+.academy .academy__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 10rem;
+  padding-right: 5rem;
+}
+.academy .academy__text .academy__cta {
+  max-width: 45rem;
+}
+.academy .academy__text .academy__cta h3 span {
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: var(--paragraph-font);
+}
+.academy .academy__text .academy__cta p {
+  margin-top: 1rem;
+}
+
+.showroom {
+  background-image: url(../img/tienda-cocina\ \(1366\ x\ 1100\ px\).png);
+  background-size: cover;
+  height: 40rem;
+  width: 100%;
+  position: relative;
+}
+.showroom .showroom__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+.showroom .showroom__cta {
+  position: absolute;
+  height: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #FAFAFF;
+  z-index: 5;
+}
+
+.footer {
+  background-color: var(--col-main);
+  color: var(--colval-white);
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.footer__up {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.footer__up .footer__up__left {
+  margin-left: 5rem;
+}
+.footer__up .footer__up__left ul {
+  list-style-type: none;
+}
+.footer__up .footer__up__left a {
+  color: #FAFAFF;
+  text-decoration: none;
+}
+
+.footer__up__right__social ul {
+  gap: 0.5rem;
+  list-style-type: none;
+}
+.footer__up__right__social ul i {
+  color: #FAFAFF;
+  font-size: 2rem;
+}
+
+.footer__up__right__payment ul {
+  margin-top: 2rem;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+.footer__up__right__payment ul i {
+  font-size: 2rem;
+  color: #FAFAFF;
+}
+
+.footer__bottom {
+  margin-top: 1rem;
+}
+.footer__bottom p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .promo-strip__text {
+    font-size: 0.9 !important;
+  }
+}
+@media (max-width: 768px) {
+  .academy__img-container {
+    display: none !important;
+  }
+  .academy__text {
+    width: 100% !important;
+    padding-right: 0 !important;
+    padding: 5rem !important;
+  }
+}/*# sourceMappingURL=main.css.map */

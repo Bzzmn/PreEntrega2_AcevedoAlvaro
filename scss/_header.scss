@@ -1,21 +1,50 @@
 .header-container{
-    background-color: $col-main;
-    position: absolute;
-    
+    background: linear-gradient(90deg,$col-main 0%, $col-sec 100%);
+    z-index: 100;
 }
 
 .nav-link{
-    color: $colval-white!important;
+    color: $colval-white;
+    &:hover{
+        opacity: .8;
+    }
 }
 
 .navbar__btn{
-    border-color: $colval-white!important;
-    color: $colval-white!important;
+    border-color: $colval-white;
+    color: $colval-white;
     &:hover{
-        background-color: $col-ter!important;
+        background-color: $col-ter;
     }
 }
 
 .navbar-toggler{
-    border: none!important;
+    border: none;
+    box-shadow: none!important;
+}
+
+.cart__btn{
+    padding: 1rem 0;
+    color: $colval-white;
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+    &:hover{
+        color:$colval-white;
+    }
+    
+}
+
+.form-control{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.navbar__btn{
+    border-radius: 0px 20px 20px 0px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active{
+    background-color: $col-main;
 }

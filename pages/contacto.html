@@ -11,7 +11,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
         <link rel="stylesheet" href="../scss/main.css">
-        <title>Pazza|Pizza</title>
+        <title>Pazza|Pizza -Contacto</title>
+        <meta name="description" content="Estamos disponibles para todas tus consultas y requerimientos.">
+        <meta name="keywords" content="Pizza casera, Accesorios para pizza, Utensilios de pizza, Ingredientes para pizza, Horno para pizza, Masa de pizza, Harina para pizza, Pizza napolitana, Pizza tradicional italiana, Pala para pizza">
     </head>
     <body>
         <header class="container-fluid header-container position-fixed">
@@ -50,7 +52,7 @@
                       </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control" type="search" placeholder="busca tus productos" aria-label="Search">
+                      <input class="form-control form-control__header" type="search" placeholder="busca tus productos" aria-label="Search">
                       <button class="btn btn-outline-success navbar__btn me-4" type="submit">Buscar</button>
                     </form>
                     <div class="cart__btn"><a href="#">Carrito <i class="fa-solid fa-cart-shopping"></i></a></div>
@@ -59,28 +61,55 @@
               </nav>
         </header> 
         <main>
-            <section id="contacto">
-                <h3>Contactanos</h3>
-                <div id="sac" class="contacto-card">
-                    <h3>Servicio al Cliente</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Magna nisi sed risus eget diam duis sed. Tempor duis.</p>
-                    <a href="#" class="btn">Contactar a Soporte</a>
-                </div>
-                <div id="distribuidores" class="contacto-card">
-                    <h3>Distribuidores</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Magna nisi sed risus eget diam duis sed. Tempor duis.</p>
-                    <a href="#" class="btn">Contactar a Ventas</a>
-                </div>
-                <div id="marketing" class="contacto-card">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Magna nisi sed risus eget diam duis sed. Tempor duis.</p>
-                    <a href="#" class="btn">Contactanos</a>
-                </div>
-                <div id="medios" class="contacto-card">
-                    <h3>Prensa y Medios</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Magna nisi sed risus eget diam duis sed. Tempor duis.</p>
-                    <a href="#" class="btn">Contactanos</a>
-                </div>
+            <section class="contacto">
+              <h1 class="title__header">Contactanos</h1>
+              <p class="title__description">Estamos disponibles para todas tus consultas y requerimientos.</p>
+              <div class="container form-container">
+                <form>
+                  <div class="mb-3">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputCompany" class="form-label">Empresa</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <h4>A que area va dirigida tu consulta o requerimiento?</h4><br>
+                  <div>
+                    <div class="mb-3 form-check">
+                      <input type="radio" class="form-check-input" id="Check1" name="contact-area" value="sac">
+                      <label class="form-check-label" for="exampleCheck1">Servicio al Cliente</label>
+                    </div>  
+                    <div class="mb-3 form-check">
+                      <input type="radio" class="form-check-input" id="Check2" name="contact-area" value="distribuidores">
+                      <label class="form-check-label" for="exampleCheck1">Distribuidores</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="radio" class="form-check-input" id="Check3" name="contact-area" value="marketing">
+                      <label class="form-check-label" for="exampleCheck1">Marketing</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="radio" class="form-check-input" id="Check4" name="contact-area" value="medios">
+                      <label class="form-check-label" for="exampleCheck1">Prensa y medios</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="radio" class="form-check-input" id="Check5" name="contact-area" value="otra">
+                      <label class="form-check-label" for="exampleCheck1">Otra</label>
+                    </div><br>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Detalles de tu consulta o requerimiento:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <br>
+                  <button type="submit" class="btn btn__custom-1">Enviar<i class="fa-regular fa-circle-chevron-right"></i></button>
+                </form>
+              </div>    
             </section>
         </main>
         <footer class="container-fluid footer">

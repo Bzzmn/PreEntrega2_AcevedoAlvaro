@@ -1,0 +1,85 @@
+.products__results{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .hornos__description {
+        max-width: 750px;
+    }
+}
+
+.selector-strip {
+    background-image: url(../../img/pizza_pattern_orange.png);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.prod-selector {
+    display: grid;
+    margin: 2rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 600px;
+    gap: .6rem;
+    .prod-categoria {
+        @include gradient;
+        border: 1px solid $col-main;
+        border-radius: 10px;
+        padding: 1rem .3rem .5rem .3rem;
+        .prod-categoria__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 5rem;
+            text-decoration: none;
+            i{
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $colval-white;
+            }
+            p{
+                font-size: .9rem;
+                max-width: 120px;
+                text-align: center;
+                color: $colval-white;
+                
+            }
+        }
+    }
+
+    .prod-categoria--selected {
+        background-color: $colval-white;
+        border: 2px solid $col-main;
+        border-radius: 10px;
+        padding: 1rem .3rem .5rem .3rem;
+        transform: translateY(-10px);
+        .prod-categoria__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 5rem;
+            text-decoration: none;
+            i{
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: $col-main;
+            }
+            p{
+                font-size: 1.1rem;
+                font-weight: 600;
+                max-width: 120px;
+                text-align: center;
+                color: $col-main;
+                
+            }
+        }
+    }
+}
+
+.breadcrumb {
+    margin-top: 5rem;
+}

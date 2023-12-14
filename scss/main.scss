@@ -19,52 +19,28 @@ body{
     background-color: $colval-white;
 }
 
+@import '@mixins';
+
 .btn.btn__custom-1{
-    background: linear-gradient(180deg,$col-main 0%, $col-sec 100%);
-    text-decoration: none;
-    color: $colval-white;
-    padding: .7rem .7rem;
-    border: none;
-    border-radius: 30px;
-    margin: .5rem 0;
-    display: flex;
-    i{
-        margin-left: 10px;
-        font-size: 1.5rem;
-    }
-    &:hover{
-        transform: scale(1.1);
-        transition: .5s ease;
-    }
+    @include mainButton;
 }
 
 .title__header {
-    font-weight: 600;
-    display: inline;
-    align-self: center;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    &::after{
-        content:'';
-        display: block;
-        position: absolute;
-        background-color: #ff00006a;
-        width: 100%;
-        height: 10px;
-        margin-top: -10px;
-        z-index: -1;
-    }
+    @include mainTitle
 }
 .title__description{
-    text-align: center;
-    padding: 0 2rem 2rem 2rem;
+    @include mainDescription
 }
 
-@import 'header';
-@import 'hero';
-@import 'productos-featured';
-@import 'academy';
-@import 'showroom';
-@import 'footer';
+@import './components/header';
+@import './components/hero';
+@import './components/product-list';
+@import './components/academy-section';
+@import './components/showroom-section';
+@import './components/footer';
+@import './pages-stylesheets/pag-academy';
+@import './pages-stylesheets/pag-productos';
+@import './pages-stylesheets/pag-showroom';
+@import './pages-stylesheets/pag-tyc';
+@import './pages-stylesheets/pag-contacto';
 @import '@media';

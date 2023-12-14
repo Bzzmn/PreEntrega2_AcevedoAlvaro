@@ -11,7 +11,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
         <link rel="stylesheet" href="../scss/main.css">
-        <title>Pazza|Pizza</title>
+        <title>Pazza|Pizza - Hornos </title>
+        <meta name="description" content="Cocina cualquier estilo de pizza, vegetales, carnes, postres y mucho mas en nuestros hornos, Tenemos a gas, pellets de madera, eléctricos y multifuel, para que encuentres justo el que necesitas.">
+        <meta name="keywords" content="Pizza casera, Accesorios para pizza, Utensilios de pizza, Ingredientes para pizza, Horno para pizza, Masa de pizza, Harina para pizza, Pizza napolitana, Pizza tradicional italiana, Pala para pizza">
     </head>
     <body>
         <header class="container-fluid header-container position-fixed">
@@ -50,7 +52,7 @@
                       </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control" type="search" placeholder="busca tus productos" aria-label="Search">
+                      <input class="form-control form-control__header" type="search" placeholder="busca tus productos" aria-label="Search">
                       <button class="btn btn-outline-success navbar__btn me-4" type="submit">Buscar</button>
                     </form>
                     <div class="cart__btn"><a href="#">Carrito <i class="fa-solid fa-cart-shopping"></i></a></div>
@@ -59,109 +61,151 @@
               </nav>
         </header>  
         <main>
-            <h3>Hornos de Pizza</h3>
-            <p>Cocina cualquier estilo de pizza, vegetales, carnes, postres y mucho mas en nuestros hornos, Tenemos a gas, pellets de madera, eléctricos y multifuel, para que encuentres justo el que necesitas.</p>
-            <div id="prod-selector">
-                <div class="prod-categoria">
-                    <a href="#" id="hornos-gas">
-                        <i class="fa-thin fa-fire"></i>
-                        <p>Hornos a Gas</p>
-                    </a>
-                </div>
-                <div class="prod-categoria">
-                    <a href="#" id="hornos-pellet">
-                        <i class="fa-thin fa-axe"></i>
-                        <p>Hornos a Pellet de Madera</p>
-                    </a>
-                </div>
-                <div class="prod-categoria">
-                    <a href="#" id="hornos-electricos">
-                        <i class="fa-thin fa-bolt"></i>
-                        <p>Hornos Electricos</p>
-                    </a>
-                </div>
-                <div class="prod-categoria">
-                    <a href="#" id="hornos-multifuel">
-                        <i class="fa-thin fa-circle-nodes"></i>
-                        <p>Hornos Multifuel</p>
-                    </a>
-                </div>
-            </div>
-            <div id="prod-destacados" class="products-cards">
-                <div class="prod-card">
-                    <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
-                    <p class="prod-name">Ooni Koda 16</p>
-                    <p class="prod-desc">Horno de pizza a gas</p>
-                    <p class="prod-price">$599.00</p>
-                    <div class="add-to-cart">
-                        <p class="add-to-cart-text">Agregar al carro</p>
-                    </div>                    
-                </div>
-                <div class="prod-card">
-                    <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
-                    <p class="prod-name">Ooni Koda 16</p>
-                    <p class="prod-desc">Horno de pizza a pellets de madera</p>
-                    <p class="prod-price">$599.00</p>
-                    <div class="add-to-cart">
-                        <p class="add-to-cart-text">Agregar al carro</p>
+            <section class="products__results">
+                <h1 class="title__header">Hornos de Pizza</h1>
+                <p class="title__description hornos__description">Cocina cualquier estilo de pizza, vegetales, carnes, postres y mucho mas en nuestros hornos, Tenemos a gas, pellets de madera, eléctricos y multifuel, para que encuentres justo el que necesitas.</p>
+                <div class="container-fluid selector-strip">
+                    <div class="container prod-selector">
+                        <div class="prod-categoria--selected">
+                            <a href="#" class="prod-categoria__card" id="hornos-gas">
+                                <i class="fa-thin fa-fire"></i>
+                                <p>Hornos a Gas</p>
+                            </a>
+                        </div>
+                        <div class="prod-categoria">
+                            <a href="#" class="prod-categoria__card" id="hornos-pellet">
+                                <i class="fa-thin fa-axe"></i>
+                                <p>Hornos a Pellet</p>
+                            </a>
+                        </div>
+                        <div class="prod-categoria">
+                            <a href="#" class="prod-categoria__card" id="hornos-electricos">
+                                <i class="fa-thin fa-bolt"></i>
+                                <p>Hornos Electricos</p>
+                            </a>
+                        </div>
+                        <div class="prod-categoria">
+                            <a href="#" class="prod-categoria__card" id="hornos-multifuel">
+                                <i class="fa-thin fa-circle-nodes"></i>
+                                <p>Hornos Multifuel</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="prod-card">
-                    <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
-                    <p class="prod-name">Ooni Koda 16</p>
-                    <p class="prod-desc">Horno de pizza a gas</p>
-                    <p class="prod-price">$599.00</p>
-                    <div class="add-to-cart">
-                        <p class="add-to-cart-text">Agregar al carro</p>
+                <div class="productos__container">
+                    <div class="producto__card">
+                        <div class="up">
+                            <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
+                            <p class="producto__name">Ooni Koda 16</p>
+                            <p class="producto__desc">Horno de pizza a gas</p>
+                        </div>
+                        <div class="down">
+                            <p class="producto__price">$599.00</p>
+                            <div class="add-to-cart">
+                                <p class="add-to-cart__text">Agregar al carro</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="producto__card">
+                        <div class="up">
+                            <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
+                            <p class="producto__name">Ooni Koda 16</p>
+                            <p class="producto__desc">Horno de pizza a gas</p>
+                        </div>
+                        <div class="down">
+                            <p class="producto__price">$599.00</p>
+                            <div class="add-to-cart">
+                                <p class="add-to-cart__text">Agregar al carro</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="producto__card">
+                        <div class="up">
+                            <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
+                            <p class="producto__name">Ooni Koda 16</p>
+                            <p class="producto__desc">Horno de pizza a gas</p>
+                        </div>
+                        <div class="down">
+                            <p class="producto__price">$599.00</p>
+                            <div class="add-to-cart">
+                                <p class="add-to-cart__text">Agregar al carro</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="producto__card">
+                        <div class="up">
+                            <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
+                            <p class="producto__name">Ooni Koda 16</p>
+                            <p class="producto__desc">Horno de pizza a gas</p>
+                        </div>
+                        <div class="down">
+                            <p class="producto__price">$599.00</p>
+                            <div class="add-to-cart">
+                                <p class="add-to-cart__text">Agregar al carro</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="producto__card">
+                        <div class="up">
+                            <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
+                            <p class="producto__name">Ooni Koda 16</p>
+                            <p class="producto__desc">Horno de pizza a gas</p>
+                        </div>
+                        <div class="down">
+                            <p class="producto__price">$599.00</p>
+                            <div class="add-to-cart">
+                                <p class="add-to-cart__text">Agregar al carro</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="producto__card">
+                        <div class="up">
+                            <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
+                            <p class="producto__name">Ooni Koda 16</p>
+                            <p class="producto__desc">Horno de pizza a gas</p>
+                        </div>
+                        <div class="down">
+                            <p class="producto__price">$599.00</p>
+                            <div class="add-to-cart">
+                                <p class="add-to-cart__text">Agregar al carro</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="producto__card">
+                        <div class="up">
+                            <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
+                            <p class="producto__name">Ooni Koda 16</p>
+                            <p class="producto__desc">Horno de pizza a gas</p>
+                        </div>
+                        <div class="down">
+                            <p class="producto__price">$599.00</p>
+                            <div class="add-to-cart">
+                                <p class="add-to-cart__text">Agregar al carro</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="producto__card">
+                        <div class="up">
+                            <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
+                            <p class="producto__name">Ooni Koda 16</p>
+                            <p class="producto__desc">Horno de pizza a gas</p>
+                        </div>
+                        <div class="down">
+                            <p class="producto__price">$599.00</p>
+                            <div class="add-to-cart">
+                                <p class="add-to-cart__text">Agregar al carro</p>
+                            </div>
+                        </div>                    
                     </div>
                 </div>
-                <div class="prod-card">
-                    <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
-                    <p class="prod-name">Ooni Koda 16</p>
-                    <p class="prod-desc">Horno de pizza a gas</p>
-                    <p class="prod-price">$599.00</p>
-                    <div class="add-to-cart">
-                        <p class="add-to-cart-text">Agregar al carro</p>
-                    </div>
-                </div>
-                <div class="prod-card">
-                    <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
-                    <p class="prod-name">Ooni Koda 16</p>
-                    <p class="prod-desc">Horno de pizza a gas</p>
-                    <p class="prod-price">$599.00</p>
-                    <div class="add-to-cart">
-                        <p class="add-to-cart-text">Agregar al carro</p>
-                    </div>
-                </div>
-                <div class="prod-card">
-                    <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
-                    <p class="prod-name">Ooni Koda 16</p>
-                    <p class="prod-desc">Horno de pizza a gas</p>
-                    <p class="prod-price">$599.00</p>
-                    <div class="add-to-cart">
-                        <p class="add-to-cart-text">Agregar al carro</p>
-                    </div>
-                </div>
-                <div class="prod-card">
-                    <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
-                    <p class="prod-name">Ooni Koda 16</p>
-                    <p class="prod-desc">Horno de pizza a gas</p>
-                    <p class="prod-price">$599.00</p>
-                    <div class="add-to-cart">
-                        <p class="add-to-cart-text">Agregar al carro</p>
-                    </div>
-                </div>
-                <div class="prod-card">
-                    <img src="../img/oven-menu-koda16-hover.webp" alt="horno de pizza" class="prod-img">
-                    <p class="prod-name">Ooni Koda 16</p>
-                    <p class="prod-desc">Horno de pizza a gas</p>
-                    <p class="prod-price">$599.00</p>
-                    <div class="add-to-cart">
-                        <p class="add-to-cart-text">Agregar al carro</p>
-                    </div>
-                </div>
-            </div>
-            <p>Home > productos</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Hornos</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">hornos-a-gas</li>
+                    </ol>
+                </nav>
+            </section>
         </main>
         <footer class="container-fluid footer">
             <div class="container pt-5">

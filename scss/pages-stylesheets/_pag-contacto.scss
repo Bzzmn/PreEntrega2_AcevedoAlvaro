@@ -1,0 +1,28 @@
+.contacto {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/pizza_pattern_orange.png);
+}
+
+.form-container {
+    max-width: 800px;
+    background-color: $colval-white;
+    padding: 4rem;
+    margin-bottom: 10rem;
+    border-radius: 20px;
+}
+
+.form-control:focus{
+    box-shadow: 0px 0px 0px 4px rgba(221, 111, 52, 0.4);
+}
+
+.form-check-input:checked {
+    background-color: $col-main;
+    border-color: $col-main;
+}
+
+.form-check-input:focus {
+    box-shadow: 0px 0px 0px 4px rgba(221, 111, 52, 0.4);
+
+}

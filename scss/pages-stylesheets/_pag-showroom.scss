@@ -1,0 +1,61 @@
+.show-image-gallery {
+    padding-top: 10rem;
+    .show-text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.show-gallery {
+ display: grid; 
+ margin-left: auto;
+ margin-right: auto;
+ grid-template-columns: repeat(3, 1fr);
+ grid-auto-rows: 200px;
+ max-width: 800px;
+ overflow: hidden;
+ background-image: url(../../img/pizza_pattern_orange.png);
+}
+
+.show-gallery :first-child {
+    background-image: url(../../img/gallery/3.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.show-gallery :nth-child(2) {
+    background-image: url(../../img/gallery/4.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.show-gallery :nth-child(3) {
+    background-image: url(../../img/gallery/1.png);
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.show-gallery :last-child {
+    background-image: url(../../img/gallery/5.png);
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+.showroom-features {
+    max-width: 850px;
+    margin: 5rem auto;
+
+}
+
+
+
+
+
+

@@ -471,42 +471,60 @@ body {
   grid-auto-rows: 200px;
   max-width: 800px;
   overflow: hidden;
-  background-image: url(../../img/pizza_pattern_orange.png);
 }
 
 .show-gallery :first-child {
-  background-image: url(../../img/gallery/3.png);
-  background-size: cover;
-  background-position: center;
   grid-column: 1/3;
   grid-row: 1/2;
 }
+.show-gallery :first-child img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .show-gallery :nth-child(2) {
-  background-image: url(../../img/gallery/4.png);
-  background-size: cover;
-  background-position: center;
   grid-column: 3/4;
   grid-row: 1/3;
 }
+.show-gallery :nth-child(2) img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .show-gallery :nth-child(3) {
-  background-image: url(../../img/gallery/1.png);
-  background-size: cover;
   grid-column: 1/2;
   grid-row: 2/3;
 }
+.show-gallery :nth-child(3) img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .show-gallery :last-child {
-  background-image: url(../../img/gallery/5.png);
-  background-size: cover;
   grid-column: 2/3;
   grid-row: 2/3;
+}
+.show-gallery :last-child img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .showroom-features {
   max-width: 850px;
   margin: 5rem auto;
+}
+
+.showroom__description {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .terminos {

@@ -16,9 +16,6 @@
     grid-gap: 16px;
 }
 
-
-
-
 .producto__card {
     border: rgba(0, 0, 0, 0.08) 1px solid;
     border-radius: 10px;
@@ -27,11 +24,15 @@
     align-items: flex-start;
     justify-content: space-between;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.03);
+    background-color: white;
     .up {
         width: 100%;
+        display: flex;
+        flex-direction: column;
         img {
             width: 80%;
             height: auto;
+            align-self: center;
         }
         .producto__name{
             font-weight: bold;
@@ -65,6 +66,5 @@
             margin: 0 auto; 
             padding: .8rem 0; 
         }
-    }
-    
+    }    
 }

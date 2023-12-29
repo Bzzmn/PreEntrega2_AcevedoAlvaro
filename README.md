@@ -33,7 +33,6 @@ Este sitio web está dedicado a ofrecer una experiencia auténtica de pizza napo
 ## Tecnologías Utilizadas
 - HTML5
 - CSS3
-- JavaScript (para interactividad y funcionalidades dinámicas)
 
 ## Mapa del Sitio
 El [mapa del sitio XML](https://bzzmn.github.io/PreEntrega2_AcevedoAlvaro/sitemap.xml) está disponible para una mejor comprensión de la estructura del sitio y facilitar la navegación.
